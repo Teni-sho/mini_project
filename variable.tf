@@ -9,7 +9,7 @@ variable "type" {
 }
 
 variable "key_pair" {
-    default = " root-server2-london "
+    default = "londonkey2.pem"
 }
 
 variable "availability_zone" {
