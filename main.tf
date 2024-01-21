@@ -54,6 +54,7 @@ resource "aws_route_table_association" "min-public-subnet2-association" {
  
     subnet_id = aws_subnet.min-public-subnet2.id 
     route_table_id = aws_route_table.min-route-table-public.id
+    
 }
 
 resource "aws_subnet" "min-public-subnet1" {

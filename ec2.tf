@@ -71,3 +71,4 @@ resource "local_file"  "ip_address" {
 }
 
 }
+

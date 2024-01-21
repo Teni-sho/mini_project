@@ -33,6 +33,7 @@
    sudo echo "<p>$(hostname -f)</p>" >> /var/www/html/index.html
    notify: restart apache 
 
+
 handlers:
   - name: restart Apache
     tags: restart 

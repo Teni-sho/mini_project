@@ -21,7 +21,7 @@ resource "aws_ib_target_group" "min-target-group" {
         interval = 15 
         timeout = 3
         healthy_threshold = 3
-        unhealthy_threshold = 3 
+        unhealthy_threshold = 3
     }
 }
 }

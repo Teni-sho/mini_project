@@ -16,7 +16,7 @@ variable "availability_zone" {
     type = map(any)
     default = {
        "a" = "eu-west-2a"
-       "b" = "eu-west-2b"  
+       "b" = "eu-west-2b"
     }
 
 }
