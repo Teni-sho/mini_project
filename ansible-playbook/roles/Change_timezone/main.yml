@@ -1,0 +1,3 @@
+- name: set timezone to Africa/Lagos
+  tags: time
+  timezone: name=Africa/Lagos

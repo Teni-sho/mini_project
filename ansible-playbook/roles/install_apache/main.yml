@@ -1,0 +1,6 @@
+- name: install apache2
+  tags: apache, apache2, ubuntu
+  apt:
+    name:
+      - apache2
+    state: latest 

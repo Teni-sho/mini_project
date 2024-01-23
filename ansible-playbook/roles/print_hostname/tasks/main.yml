@@ -1,0 +1,12 @@
+- name: remove index.html
+  file:
+    path: /var/www/html/index.html
+    state: absent
+
+- name: use the printf script
+  shell: |
+    sudo echo "<h1>Welcome This is my hostname:" >> /var/www/html/index.html
+    sudo echo "<p>$(hostname -f)</p>" >> /var/www/html/index.html
+    sudo echo "<h1>and the date is:</h1>" >> /var/www/html/index.html
+    sudo echo "<p>$(date)</p>" >> /var/www/html/index.html
+  notify: restart_apache
