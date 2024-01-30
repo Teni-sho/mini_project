@@ -38,7 +38,7 @@ resource "aws_internet_gateway" "min_internet_gateway" {
 # Create public Route Table
 
 resource "aws_route_table" "min-route-table-public" {
-  vpc_id = aws_vpc.ass_vpc.id
+  vpc_id = aws_vpc.min_vpc.id
 
   route {
     cidr_block = "0.0.0.0/0"
