@@ -73,7 +73,7 @@ resource "aws_instance" "min-3" {
 # Create a file to store the IP addresses of the instances
 
 resource "local_file" "Ip_address" {
-  filename = "/root/terraform/ansible-playbook/host-inventory"
+  filename = "/~/terraform/ansible-playbook/host-inventory"
   content  = <<EOT
 ${aws_instance.min-1.public_ip}
 ${aws_instance.min-2.public_ip}
