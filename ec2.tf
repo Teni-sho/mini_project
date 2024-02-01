@@ -12,7 +12,7 @@ resource "aws_instance" "min-1" {
     type        = "ssh"
     host        = "self.public_ip"
     user        = "ubuntu"
-    private_key = file("/home/miniproject/londonkey2.pem")
+    private_key = file("/home/ubuntu/miniproject/londonkey2.pem")
   }
 
   tags = {
@@ -36,7 +36,7 @@ resource "aws_instance" "min-2" {
     type        = "ssh"
     host        = "self.public_ip"
     user        = "ubuntu"
-    private_key = file("/home/miniproject/londonkey2.pem")
+    private_key = file("/home/ubuntu/miniproject/londonkey2.pem")
   }
 
   tags = {
@@ -60,7 +60,7 @@ resource "aws_instance" "min-3" {
     type        = "ssh"
     host        = "self.public_ip"
     user        = "ubuntu"
-    private_key = file("/home/miniproject/londonkey2.pem")
+    private_key = file("/home/ubuntu/miniproject/londonkey2.pem")
   }
 
   tags = {
@@ -73,7 +73,7 @@ resource "aws_instance" "min-3" {
 # Create a file to store the IP addresses of the instances
 
 resource "local_file" "Ip_address" {
-  filename = "/home/miniproject/ansible-playbook/host-inventory"
+  filename = "/home/ubuntu/miniproject/ansible-playbook/host-inventory"
   content  = <<EOT
 ${aws_instance.min-1.public_ip}
 ${aws_instance.min-2.public_ip}
